@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let vl = parseInt(prompt("Nhập điểm vật lý:"));
+    let hh = parseInt(prompt("Nhập điểm hóa học:"));
+    let sh = parseInt(prompt("Nhập điểm sinh học:"));
+    let tong = vl + hh + sh;
+    let tb = tong / 3;
+    document.write("Tổng = "+tong);
+    document.write("<br/>");
+    document.write("Trung bình = "+tb);
+    document.write("<br/>");
+</script>
+<script>
+    let cel = parseFloat(prompt("Nhập độ C:"));
+    let fah = cel/5*9+32
+    document.write("Giá trị độ F ="+fah)
+</script>
+<script>
+    let r = parseFloat(prompt("Nhap ban kinh"));
+    let pi = 3.14;
+    let dt = r*r*pi;
+    let cv = 2*pi*r;
+    document.write("Dien tich=" + dt);
+    document.write("<br/>");
+    document.write("Chu vi=" + cv);
+</script>
+</body>
+</html>
