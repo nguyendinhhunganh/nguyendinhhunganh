@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td><input id="nhap" name="nhap" type="number" placeholder="Nhập số tiền"></td>
+            <td><select name="from" id="from">
+                <option value="vn">VietNam</option>
+                <option value="usd">USD</option>
+            </select> </td>
+            <td><select name="to" id="to">
+                <option value="usd">USD</option>
+                <option value="vn">VietNam</option>
+            </select></td>
+            <th><button id="convert" type="button" onclick="cal()">Convert</button> </th>
+        </tr>
+    </table>
+    <p id="result" style="color: blue">Result:</p>
+<script>
+    function cal() {
+        let a = document.getElementById("nhap").value;
+        let From = document.getElementById("from").value;
+        let To = document.getElementById("to").value;
+        let Convert;
+        if (From === "vn" && To === "usd") {
+                Convert = a / 23000;
+                document.getElementById("result").innerHTML="Result:"+Convert+"$";
+        }
+        else if (From === "usd" && To === "vn"){
+                Convert = a * 23000;
+                document.getElementById("result").innerHTML="Result:"+Convert+"Vnd";
+        }
+        else alert("Chọn lại đơn vị tiền tệ!!!")
+    }
+</script>
+</body>
+</html>

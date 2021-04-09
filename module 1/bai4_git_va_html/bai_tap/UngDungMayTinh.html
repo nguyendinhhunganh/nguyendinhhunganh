@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<br>
+    <input type="number" id ="a" placeholder="a">
+    <input type="number" id ="b" placeholder="b"><br><br><br>
+    <button type="button" id="add" onclick="add()">Addition(+)</button>
+    <button type="button" id="sub" onclick="sub()">Subtraction(-)</button>
+    <button type="button" id="multi" onclick="multi()">Multiplication(X)</button>
+    <button type="button" id="div" onclick="div()">Division(/)</button><br><br><br>
+<p id="result">Result Division:</p>
+<script>
+    function add() {
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let kq = a + b;
+        document.getElementById("result").innerHTML="Result Division:"+kq;
+    }
+    function sub() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let kq = a - b;
+        document.getElementById("result").innerHTML="Result Division:"+kq;
+    }function multi() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let kq = a * b;
+        document.getElementById("result").innerHTML="Result Division:"+kq;
+    }function div() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let kq = a / b;
+        document.getElementById("result").innerHTML="Result Division:"+kq;
+    }
+</script>
+</body>
+</html>
