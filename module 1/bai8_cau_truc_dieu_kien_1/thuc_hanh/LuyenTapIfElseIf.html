@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let username = prompt("Nhap ten:");
+    if (username == "Admin")
+    {
+        let pass = prompt("Nhap mat khau:");
+        if ( pass == "TheMaster")
+            document.write("Welcome");
+        else if ( pass == "null")
+            document.write("Calceled");
+        else document.write("Wrong password");
+    }
+    else if ( username == "null")
+        document.write("Canceled")
+    else document.write("I dont know you")
+</script>
+</body>
+</html>
