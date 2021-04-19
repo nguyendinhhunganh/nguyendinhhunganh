@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Do you love me?</h2>
+<button type="button" id="yes" onclick="alert('<3')">Yes</button>
+<button type="button" id="no" onmouseover="chay();" style="position:absolute;" >No</button>
+<script>
+ function chay() {
+     let a = document.getElementById("no");
+     a.style.left = Math.random()*screen.width + "px";
+     a.style.top = Math.random()*screen.height + "px";
+ }
+</script>
+</body>
+</html>

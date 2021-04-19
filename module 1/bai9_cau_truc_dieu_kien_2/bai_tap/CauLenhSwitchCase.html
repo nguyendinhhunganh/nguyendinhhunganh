@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="sothang">
+<button type="button" onclick="but();">Tính số ngày</button>
+<p id="inra"></p>
+<script>
+    function but() {
+        let so = parseFloat(document.getElementById("sothang").value);
+        let a = "Tháng " + so + ' có 31 ngày';
+        let b = "Tháng " + so + ' có 30 ngày';
+        let c = "Tháng 2 có 28 ngày";
+        switch (so) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById("inra").innerHTML = a;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.getElementById("inra").innerHTML = b;
+                break;
+            case 2:
+                document.getElementById("inra").innerHTML = c;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg" id="anh1" style="width: 700px" onclick="change1()"><br>
+<img src="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg" id="anh2" style="width: 700px" onclick="change2()"><br>
+<img src="https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg" id="anh3" style="width: 700px" onclick="change3()"><br>
+<img src="https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg" id="anh4" style="width: 700px" onclick="change4()"><br>
+<img src="https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg" id="anh5" style="width: 700px" onclick="change5()">
+<script>
+    function change1() {
+        if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg")
+            anh1.src = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg";
+        else if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg")
+            anh1.src = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg";
+        else anh1.src = "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg";
+        if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg"
+        && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg"
+        && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg"
+        && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg"
+        && anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg")
+            alert("Khỉ");
+        else if (anh1.src = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg"
+        && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg"
+        && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg"
+            && anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg")
+            alert("Gấu");
+        else if (anh1.src = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg"
+        && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg"
+        && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg"
+        && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg"
+        &&  anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg")
+            alert("Mèo");
+    }
+    function change2() {
+        if (anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg")
+            anh2.src = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg";
+        else if (anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg")
+            anh2.src = "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg";
+        else anh2.src = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg";
+        if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg"
+            && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg"
+            && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg"
+            && anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg")
+            alert("Khỉ");
+        else if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg"
+        && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg"
+        && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg"
+            && anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg")
+            alert("Gấu");
+        else if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg"
+        && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg"
+        && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg"
+        && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg"
+        &&  anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg")
+            alert("Mèo")
+    }
+    function change3() {
+        if (anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg")
+            anh3.src = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg";
+        else if (anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg")
+            anh3.src = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg";
+        else anh3.src = "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg";
+        if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg"
+            && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg"
+            && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg"
+            && anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg")
+            alert("Khỉ");
+        else if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg"
+            && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg"
+            && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg"
+            && anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg")
+            alert("Gấu");
+        else if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg"
+            && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg"
+            && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg"
+            &&  anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg")
+            alert("Mèo")
+    }
+    function change4() {
+        if (anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg")
+            anh4.src = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg";
+        else if (anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg")
+            anh4.src = "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg";
+        else anh4.src = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg";
+        if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg"
+            && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg"
+            && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg"
+            && anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg")
+            alert("Khỉ");
+        else if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg"
+            && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg"
+            && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg"
+            && anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg")
+            alert("Gấu");
+        else if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg"
+            && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg"
+            && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg"
+            &&  anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg")
+            alert("Mèo")
+    }
+    function change5() {
+        if (anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg")
+            anh5.src = "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg";
+        else if (anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg")
+            anh5.src = "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg";
+        else anh5.src = "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg";
+        if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg"
+            && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg"
+            && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg"
+            && anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg")
+            alert("Khỉ");
+        else if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg"
+            && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg"
+            && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg"
+            && anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg")
+            alert("Gấu");
+        else if (anh1.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg"
+            && anh2.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg"
+            && anh3.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg"
+            && anh4.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg"
+            &&  anh5.src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg")
+            alert("Mèo")
+    }
+</script>
+</body>
+</html>

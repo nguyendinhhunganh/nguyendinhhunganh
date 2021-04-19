@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<img id = "myimage" src="https://image.thanhnien.vn/660/uploaded/congthang/2020_06_30/a3_fsdi.jpg" style="width: 300px; height: 300px">
+<p><b>Click button below to move the image to right</b></p>
+<button type="button" onclick="moveRight()">Click me</button>
+</form>
+<script>
+    let imgObj = document.getElementById("myimage");
+    function init() {
+        imgObj.style.position = 'relative';
+        imgObj.style.left = '0px';
+    }
+    function moveRight() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+    }
+    window.onload = init;
+</script>
+</body>
+</html>
