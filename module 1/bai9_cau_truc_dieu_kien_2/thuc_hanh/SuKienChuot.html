@@ -1,25 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<form>
-<img id = "myimage" src="https://image.thanhnien.vn/660/uploaded/congthang/2020_06_30/a3_fsdi.jpg" style="width: 300px; height: 300px">
-<p><b>Click button below to move the image to right</b></p>
-<button type="button" onclick="moveRight()">Click me</button>
-</form>
-<script>
-    let imgObj = document.getElementById("myimage");
-    function init() {
-        imgObj.style.position = 'relative';
-        imgObj.style.left = '0px';
-    }
-    function moveRight() {
-        imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
-    }
-    window.onload = init;
-</script>
-</body>
-</html>
+#!/usr/bin/python           # This is server.py file
+
+import socket               # Import socket module
+
+s = socket.socket()         # Create a socket object
+host = socket.gethostname() # Get local machine name
+port = 12345                # Reserve a port for your service.
+s.bind((host, port))        # Bind to the port
+
+s.listen(5)                 # Now wait for client connection.
+
+
+def clientthread(conn):
+    conn.send('connected') 
+    try:
+        while True:        
+            data = conn.recv(1024)
+            processData(conn,data)
+            if not data:
+                break
+    except Exception as ex:
+        print (ex)
+    conn.close()
+
+
+
+while True:
+   conn, addr = s.accept()    
+   print ('Got connection from', addr)
+   thread.start_new_thread(clientthread ,(conn,))
+
+s.close()

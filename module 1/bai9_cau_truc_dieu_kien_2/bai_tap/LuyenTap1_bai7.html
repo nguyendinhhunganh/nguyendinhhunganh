@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let cuoc;
+    let time = parseFloat(prompt('Nhap thoi gian:'));
+    if (time <= 50)
+        cuoc = (25000 + (time * 600));
+    else if (time <= 200)
+        cuoc = (25000 + (50*600 + (time - 50)*400));
+    else cuoc = ( 25000 + (50*600) + (150*400) + (time - 200)*200);
+    alert(cuoc);
+</script>
+</body>
+</html>

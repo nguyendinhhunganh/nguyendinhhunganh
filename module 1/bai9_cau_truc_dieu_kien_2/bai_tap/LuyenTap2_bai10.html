@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let cuoc;
+    let kwh = parseFloat(prompt('Nhap so dien:'));
+    if (kwh <= 50)
+        cuoc = (kwh*1678);
+    else if (kwh <= 100)
+        cuoc = (50*1678 + (kwh - 50)*1734);
+    else if (kwh <= 200)
+        cuoc = (50*1678 + 50*1734 + (kwh - 100)*2014);
+    else
+        cuoc = (50*1678 + 50*1734 + 100*2014 + (kwh - 200)*2540);
+    alert(cuoc);
+</script>
+</body>
+</html>
