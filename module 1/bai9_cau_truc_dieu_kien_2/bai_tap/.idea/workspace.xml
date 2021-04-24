@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c874dcb-648b-453c-96ca-4147484c638e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/LuyenTap2_bai12.html" beforeDir="false" afterPath="$PROJECT_DIR$/LuyenTap2_bai12.html" afterDir="false" />
-    </list>
+    <list default="true" id="5c874dcb-648b-453c-96ca-4147484c638e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +43,7 @@
       <updated>1619163959363</updated>
       <workItem from="1619163960524" duration="2754000" />
       <workItem from="1619174002174" duration="184000" />
+      <workItem from="1619253427847" duration="12000" />
     </task>
     <servers />
   </component>
