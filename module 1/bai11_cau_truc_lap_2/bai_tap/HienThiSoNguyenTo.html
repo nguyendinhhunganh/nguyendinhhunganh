@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // debugger;
+    // let number = parseInt(prompt("Nhập số lượng SNT cần in:"));
+    // let count = 0; //Ktra so luong snt
+    // let n = 3; //Ktra n co phai snt hay k
+    // if (number == 1)
+    //     document.write(2);
+    // else if (number < 1)
+    //     document.write("Nhap lai!!");
+    // else {
+    //     document.write(2 + " ");
+    //     while (count < (number - 1)) {
+    //         var count2 = 0;
+    //         for (let i = 2; i < n; i++) {
+    //             if (n % i == 0) {
+    //                 count2++;
+    //             }
+    //         }
+    //         if (count2 < 1) {
+    //             document.write(n + " ");
+    //             count++;
+    //         } else count2 = 0;
+    //         n++;
+    //     }
+    // }
+    let number = parseInt(prompt("Nhập số lượng SNT cần in:"));
+    let count = 0; //Ktra so luong snt
+    let n = 2;
+        while (count < number) {
+            let check = true;
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    check = false;
+                    break;
+                }
+            }
+            if (check) {
+                document.write(n + " ");
+                count++;
+            }
+            n++;
+    }
+</script>
+</body>
+</html>

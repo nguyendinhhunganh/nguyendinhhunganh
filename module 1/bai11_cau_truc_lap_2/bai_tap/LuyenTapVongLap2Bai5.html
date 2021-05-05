@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    debugger;
+    let begin = parseFloat(prompt("Nhap so tien ban dau:"));
+    let rate = parseFloat(prompt("Nhap lai suat hang thang:"));
+    let time = parseFloat(prompt("Nhap so thang cho vay:"));
+    let total = begin;
+    for (let i = 1; i <= time; i++) {
+        let lai = (total * rate);
+        total += lai;
+    }
+    document.write(total);
+</script>
+</body>
+</html>

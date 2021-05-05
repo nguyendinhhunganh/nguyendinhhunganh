@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="play()">Chơi</button>
+<script>
+    function play() {
+        let a = parseInt(prompt("Nhap khoang muon doan a-b(a):"));
+        let b = parseInt(prompt("Nhap khoang muon doan a-b(b):"));
+        let d = match.floor(Math.random() * (b - (a - 1))) + a;
+        let c = parseInt(prompt("Nhap gia tri doan:"));
+        let count = 0;
+        if (c == d)
+            alert("Congra!");
+        else if (c < d) {
+            alert("Nho hon");
+            count++;
+            if (count == 3)
+                alert("Game Over");
+        } else if (c > d) {
+            alert("Lon Hon");
+            count++;
+            if (count == 3)
+                alert("Game Over");
+        }
+    }
+</script>
+</body>
+</html>

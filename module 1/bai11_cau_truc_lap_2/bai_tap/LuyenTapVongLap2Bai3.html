@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhap chieu cao:"))
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= i; j++)
+            document.write('*');
+        document.write('<br>');
+    }
+    document.write("<br><br><br>");
+    for (let i = n; i >= 1; i--) {
+        for (let j = i; j >= 1; j--)
+            document.write('*');
+        document.write("<br>");
+    }
+    document.write("<br><br><br>");
+
+</script>
+</body>
+</html>

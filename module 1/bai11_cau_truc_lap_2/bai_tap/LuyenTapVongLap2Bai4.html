@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dai = parseInt(prompt("Nhap chieu dai:"));
+    let rong = parseInt(prompt("Nhap chieu rong:"));
+    for (let i = 1; i <= rong; i++) {
+        for (let j = 1; j <= dai; j++) {
+            if (i == 1 || j == 1 || i == rong || j == dai)
+                document.write('*')
+            else document.write(" ");
+        }
+        document.write("<br>");
+            }
+</script>
+</body>
+</html>
