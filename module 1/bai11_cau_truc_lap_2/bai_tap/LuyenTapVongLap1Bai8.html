@@ -10,7 +10,7 @@
     function play() {
         let a = parseInt(prompt("Nhap khoang muon doan a-b(a):"));
         let b = parseInt(prompt("Nhap khoang muon doan a-b(b):"));
-        let d = match.floor(Math.random() * (b - (a - 1))) + a;
+        let d = Math.floor(Math.random() * (b - (a - 1))) + a;
         let c = parseInt(prompt("Nhap gia tri doan:"));
         let count = 0;
         if (c == d)

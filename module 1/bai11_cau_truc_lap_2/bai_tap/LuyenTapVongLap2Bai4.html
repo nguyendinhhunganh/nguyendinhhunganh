@@ -6,16 +6,21 @@
 </head>
 <body>
 <script>
-    let dai = parseInt(prompt("Nhap chieu dai:"));
-    let rong = parseInt(prompt("Nhap chieu rong:"));
-    for (let i = 1; i <= rong; i++) {
-        for (let j = 1; j <= dai; j++) {
-            if (i == 1 || j == 1 || i == rong || j == dai)
-                document.write('*')
-            else document.write(" ");
+    for (i=1;i<=21;i++) {
+        document.write("*");
+    }
+    document.write("<br>");
+    for (j=0;j<5;j++) {
+        document.write("*");
+        for (i = 1; i <= 19; i++) {
+            document.write("&ensp;");
         }
+        document.write("*");
         document.write("<br>");
-            }
+    }
+    for (i=1;i<=21;i++) {
+        document.write("*");
+    }
 </script>
 </body>
 </html>
