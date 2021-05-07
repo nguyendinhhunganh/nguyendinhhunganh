@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    for ( let i = 0; i< 10; i++)
+    {
+        array[i] = parseInt(prompt("Nhap ptu thu" + i));
+    }
+    let v = parseInt(prompt("nhập vào số V : "));
+    for (let i = 0; i < 10; i++) {
+        if (array[i] === v) {
+            alert("V is in the array");
+            break;
+        } else
+            alert("V is not in the array")
+    }
+</script>
+</body>
+</html>
