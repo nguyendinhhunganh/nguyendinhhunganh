@@ -7,15 +7,14 @@
 <body>
 <script>
     let array = [];
-    let 
-    let newArray = [];
     for (let i = 0; i < 10; i++) {
         array[i] = parseInt(prompt("Nhap ptu thu" + i));
     }
     for (let i = 0; i < 10; i++)
     {
-
+        array.sort(function (a, b) {return b-a})
     }
+    document.write(array);
 </script>
 </body>
 </html>

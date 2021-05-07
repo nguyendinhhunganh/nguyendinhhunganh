@@ -6,7 +6,18 @@
 </head>
 <body>
 <script>
-
+    let arraya =[];
+    for ( let i = 0; i< 10; i++)
+    {
+        arraya[i] = parseInt(prompt("Nhap ptu thu" + i));
+    }
+    let arrayb =[];
+    for ( let i = 0; i< 10; i++)
+    {
+        arrayb[i] = parseInt(prompt("Nhap ptu thu" + i));
+    }
+    let arrayc = arraya.concat(arrayb);
+    document.write(arrayc)
 </script>
 </body>
 </html>
