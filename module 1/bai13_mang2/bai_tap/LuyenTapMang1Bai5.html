@@ -5,6 +5,17 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let array =  new Array();
+    let result = [];
+    array.length = parseInt(prompt("Nhập vào số phần tử : "));
+    for (i=0; i < array.length; i++) {
+        array[i] = parseInt(prompt("Array[" + i + "]="));
+        if (array[i]<0) {
+            result.push(array[i])
+        }
+    }
+    document.write("Trong mảng có " +result.length + " số nguyên âm");
+</script>
 </body>
 </html>
