@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function feetToMeter(feet) {
+        meter = 0.305 * feet;
+        return meter;
+    }
+    function meterToFeet(meter) {
+        feet = 3.279 * meter;
+        return feet;
+    }
+    let value = parseFloat(prompt("Nhập giá trị cần đổi:"));
+    alert("giá trị chuyển đổi từ feet sang meter là :" + feetToMeter(value));
+    alert("giá trị chuyển đổi từ meter sang feet là :" + meterToFeet(value));
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let pi = 3.14;
+
+    function dT(radius) {
+        return radius * radius * pi;
+    }
+
+    function cV(radius) {
+        return 2 * radius * pi;
+    }
+
+    let radius = parseFloat(prompt("Nhập bán kính hình tròn :"));
+    alert("diện tích hình tròn là : " + dT(radius));
+    alert("chu vi hình tròn là : " + cV(radius));
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkarray(array, check) {
+        let number = 0;
+        for (i = 0; i < array.length; i++) {
+            if (array[i] === check) {
+                number++;
+            } else if (i === (array.length - 1) && number <= 0) {
+                number = -1
+            }
+        }
+        return number;
+    }
+    let array = ["a", "b", "b", "r", "s", "a", "y", "y", "d", "b", "d", "s", "a", "h", "u", "v"];
+    let check = prompt("nhập kí tự cần tìm trong mảng : ");
+    alert(checkarray(array, check));
+</script>
+</body>
+</html>
