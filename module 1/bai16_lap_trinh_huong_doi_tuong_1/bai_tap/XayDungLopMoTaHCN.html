@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="rectangle" style="width: 600px; height: 400px;"></canvas>
+<script>
+    class Rectangle{
+        constructor(length, width) {
+          this.length = length;
+          this.width = width;
+        }
+        getArea()
+        {
+            return this.length * this.width;
+        }
+        getPerimeter()
+        {
+            return 2 * (this.length + this.width);
+        }
+        display(){
+            var ctx = document.getElementById("rectangle").getContext("2d");
+            ctx.strokeRect(10, 10, length, width);
+        }
+    }
+    let rectangle = new Rectangle(10,5);
+    document.write("<br> Diện tích:"+rectangle.getArea())
+    document.write("<br> Chu vi:"+rectangle.getPerimeter())
+    rectangle.display()
+</script>
+</body>
+</html>
