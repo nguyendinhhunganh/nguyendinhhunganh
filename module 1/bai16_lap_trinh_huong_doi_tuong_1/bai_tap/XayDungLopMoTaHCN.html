@@ -11,24 +11,24 @@
         constructor(length, width) {
           this.length = length;
           this.width = width;
-        }
+        };
         getArea()
         {
             return this.length * this.width;
-        }
+        };
         getPerimeter()
         {
             return 2 * (this.length + this.width);
-        }
+        };
         display(){
             var ctx = document.getElementById("rectangle").getContext("2d");
-            ctx.strokeRect(10, 10, length, width);
-        }
-    }
-    let rectangle = new Rectangle(10,5);
+            ctx.strokeRect(10, 10, this.length, this.width);
+        };
+    };
+    let rectangle = new Rectangle(20,10);
     document.write("<br> Diện tích:"+rectangle.getArea())
     document.write("<br> Chu vi:"+rectangle.getPerimeter())
-    rectangle.display()
+    rectangle.display();
 </script>
 </body>
 </html>
