@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luong = parseInt(prompt("Nhập lương nhân viên nhận được"));
+    let thue = 0;
+    let luongthucte = 0;
+    if (luong > 15000000) {
+        thue = luong * 0.2;
+        luongthucte = luong - thue;
+        alert("Thuế thu nhập: " + thue);
+        alert("Lương thực tế nhân viên nhận được " + luongthucte);
+    } else if (luong <= 15000000 && luong >= 7000000) {
+        thue = luong * 0.1;
+        luongthucte = luong - thue;
+        alert("Thuế thu nhập là " + thue);
+        alert("Lương thực tế nhân viên nhận được " + luongthucte);
+    } else if (luong < 7000000 && luong > 0) {
+        thue = luong * 0.05;
+        luongthucte = luong - thue;
+        alert("Thuế thu nhập là " + thue);
+        alert("lương thực tế nhân viên nhận được " + luongthucte);
+    } else alert("Nhập sai vui lòng nhập lại")
+</script>
+</body>
+</html>
