@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th id="cf" onclick="cf()">Cafe</th>
+        <th id="cam" onclick="cam()">Cam vắt</th>
+        <th id="carot" onclick="carot()">Ép cà rốt</th>
+        <th id="cachua" onclick="cachua()">Ép cà chua</th>
+        <th id="loc" onclick="loc()">Nước lọc</th>
+        <th id="dua" onclick="dua()">Nước dừa</th>
+    </tr>
+</table>
+<br>
+<button type="button" onclick="thanhtoan()">Thanh Toán</button>
+<script>
+    let price1 = 0;
+    let price2 = 0;
+    let price3 = 0;
+    let price4 = 0;
+    let price5 = 0;
+    let price6 = 0;
+
+    function cf() {
+        let sL1 = parseFloat(prompt("Đơn giá 15k, mời bạn nhập số lượng:"));
+        price1 = sL1 * 15000;
+    }
+
+    function cam() {
+        let sL2 = parseFloat(prompt("Đơn giá 25k, mời bạn nhập số lượng:"));
+        price2 = sL2 * 25000;
+    }
+
+    function carot() {
+        let sL3 = parseFloat(prompt("Đơn giá 20k, mời bạn nhập số lượng:"));
+        price3 = sL3 * 20000;
+    }
+
+    function cachua() {
+        let sL4 = parseFloat(prompt("Đơn giá 20k, mời bạn nhập số lượng:"));
+        price4 = sL4 * 20000;
+    }
+
+    function loc() {
+        let sL5 = parseFloat(prompt("Đơn giá 10k, mời bạn nhập số lượng:"));
+        price5 = sL5 * 10000;
+    }
+
+    function dua() {
+        let sL6 = parseFloat(prompt("Đơn giá 30k, mời bạn nhập số lượng:"));
+        price6 = sL6 * 30000;
+    }
+
+    function thanhtoan() {
+        let price = 0;
+        price = price1 + price2 + price3 + price4 + price5 + price6;
+        alert("Tổng số tiền: " + price);
+    }
+</script>
+</table>
+</body>
+</html>

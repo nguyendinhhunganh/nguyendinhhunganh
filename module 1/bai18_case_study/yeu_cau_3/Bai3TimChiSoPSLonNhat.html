@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soPTu = parseFloat(prompt("Nhap so phan so:"));
+    let nume = new Array();
+    let deno = [];
+    let chiso;
+    let max = 0;
+    for (let i = 0; i < soPTu; i++) {
+        nume[i] = parseFloat(prompt("Nhap phan tu tư thu" + (i) + ':'));
+    }
+    for (let j = 0; j < soPTu; j++) {
+        deno[j] = parseFloat(prompt("Nhap phan tu mau thu" + (j) + ':'));
+    }
+    for (let k = 0; k < soPTu; k++) {
+        if (nume[k] / deno[k] > max) {
+            max = (nume[k] / deno[k]);
+            chiso = k;
+        }
+    }
+    alert("Chi so cua phan so lon nhat la: " + chiso);
+</script>
+</body>
+</html>
