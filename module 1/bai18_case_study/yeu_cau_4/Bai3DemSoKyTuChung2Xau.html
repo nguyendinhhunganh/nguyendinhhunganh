@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let xau1 = prompt("Nhập xâu thứ nhất");
+    // let xau2 = prompt("Nhập xâu thứ hai:");
+    // let mang1 = [];
+    // let mang2 = [];
+    // let count = 0;
+    // for (let i = 0; i < xau1.length; i++){
+    //     let check = true;
+    //     for (let j = i; j >= 0; j--){
+    //         if (j !== i && xau1[i] === xau1[j]){
+    //             check = false;
+    //         }
+    //     }
+    //     if (check == true)
+    //     {
+    //         mang1.push(xau1[i]);
+    //     }
+    // }
+    // for (let i = 0; i < xau2.length; i++){
+    //     let check = true;
+    //     for (let j = i; j >= 0; j--){
+    //         if (j !== i && xau2[i] === xau1[j]){
+    //             check = false;
+    //         }
+    //     }
+    //     if (check == true)
+    //     {
+    //         mang2.push(xau2[i]);
+    //     }
+    // }
+    // for (let i = 0; i < mang1.length; i++){
+    //     let check2 = false;
+    //     for (let j = 0; j < mang2.length; j++){
+    //         if (mang1[i] === mang2[j]){
+    //             check2 = true;
+    //             break;
+    //         }
+    //     }
+    //     if (check2){
+    //         count ++;
+    //     }
+    // }
+    // document.write("Số ký tự giống là: "+ count);
+    let xau1 = prompt("Nhập xâu thứ nhất");
+    let xau2 = prompt("Nhập xâu thứ hai:");
+    let mang1 = [];
+    let mang2 = [];
+    let count = 0;
+    for (let i of xau1) {
+        mang1.push(i);
+    }
+    for (let i of xau2) {
+        mang2.push(i);
+    }
+    for (let i = 0; i < mang1.length; i++) {
+        for (let j = 0; j< mang2.length; j ++){
+            if (mang1[i] === mang2[j]){
+                count++;
+                mang2.splice(j,1);
+                break;
+            }
+        }
+    }
+    document.write("Số ký tự giống là: " + count);
+
+</script>
+</body>
+</html>

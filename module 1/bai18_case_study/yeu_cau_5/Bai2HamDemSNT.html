@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = parseFloat(prompt("Nhap m:"));
+    let n = parseFloat(prompt("Nhap n:"));
+    let mang = []
+    let count = 0;
+    for (let i = 0; i < m; i++) {
+        mang[i] = [];
+        for (let j = 0; j < n; j++) {
+            mang[i][j] = parseFloat(prompt("Nhap phan tu A[" + i + "][" + j + "]"));
+        }
+    }
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            let check = true;
+            if (mang[i][j] === 1)
+                check = false;
+            else for (let k = 2; k < mang[i][j]; k++)
+            {
+                if (mang[i][j] % k === 0){
+                    check = false;
+                }
+                    }
+            if (check)
+            {
+                count++;
+                document.write(mang[i][j]);
+            }
+        }
+    }
+    alert(count);
+</script>
+</body>
+</html>

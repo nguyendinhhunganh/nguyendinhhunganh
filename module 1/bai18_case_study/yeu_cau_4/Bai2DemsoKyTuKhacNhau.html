@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoiGoc = prompt("Nhap xau ky tu:");
+    let count = 0;
+    for (let i = 0; i < chuoiGoc.length; i++) {
+        let check = false;
+        let same = 1;
+        for (let j = 0; j < chuoiGoc.length;j++)
+        {
+            if (chuoiGoc[i] === chuoiGoc[j] && i !== j) {
+                check = true;
+                same++;
+            }
+        }
+        if (check === false) {
+            count++;
+        } else {
+            count += 1 / same;
+        }
+    }
+    document.write("differentSymbolsNaive(s) = " + count)
+</script>
+</body>
+</html>

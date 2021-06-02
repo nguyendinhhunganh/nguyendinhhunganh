@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = parseFloat(prompt("Nhap m:"));
+    let n = parseFloat(prompt("Nhap n:"));
+    let mang = [];
+    let max = 0;
+
+    for (let i = 0; i < m; i++) {
+        mang[i] = [];
+        for (let j = 0; j < n; j++) {
+            mang[i][j] = parseFloat(prompt("Nhap phan tu A[" + i + "][" + j + "]"));
+        }
+    }
+    let min = mang[1][1];
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (mang[i][j] > max)
+            {
+                max = mang[i][j];
+            }
+            if (mang[i][j] < min){
+                min = mang[i][j];
+            }
+        }
+    }
+    document.write("Gia tri lon nhat la: " + max + "<br>");
+    document.write("Gia tri nho nhat la: "+min);
+</script>
+</body>
+</html>

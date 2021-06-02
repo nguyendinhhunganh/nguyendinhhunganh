@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoiGoc = prompt("Nhap xau ky tu:");
+    document.write("Xau ki tu truoc khi chuan hoa : " + chuoiGoc + "<br>");
+    let arr = chuoiGoc.split(" ");
+    let arrNew = [];
+
+    function chuanHoa() {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (j === 0) {
+                    arrNew.push(arr[i][j].toUpperCase());
+                    continue;
+            }
+            arrNew.push(arr[i][j].toLowerCase());
+        }
+        arrNew.push(" ");
+    }
+
+    document.write("Chuỗi ký tự sau khi chuẩn hóa: " + arrNew.join(""));
+    }
+    chuanHoa();
+</script>
+</body>
+</html>
