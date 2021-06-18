@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f4b48146-7f00-41ec-be32-1fb5964dec66" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/A0321I1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bc_tuan/A0321I1_Nguyễn Đình Hùng Anh.docx" beforeDir="false" afterPath="$PROJECT_DIR$/bc_tuan/A0321I1_Nguyễn Đình Hùng Anh.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module 1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module 1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module 1/.idea/module 1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module 1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module 1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module 1/bai12_mang1/thuc_hanh/DaoNguocPhanTu.html" beforeDir="false" afterPath="$PROJECT_DIR$/module 1/bai12_mang1/thuc_hanh/DaoNguocPhanTu.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1u7TfRqrpjZhThKXO3ZICxbkCBf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4b48146-7f00-41ec-be32-1fb5964dec66" name="Default Changelist" comment="" />
+      <created>1624015730856</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624015730856</updated>
+      <workItem from="1624015736515" duration="174000" />
+      <workItem from="1624015927101" duration="8000" />
+      <workItem from="1624015957561" duration="17000" />
+      <workItem from="1624016018196" duration="739000" />
+      <workItem from="1624016887971" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1624016249156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1624016249156" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1624016926768">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1624016926768" />
+    <state x="209" y="32" key="new project wizard" timestamp="1624016930828">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="32" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1624016930828" />
+  </component>
+</project>

@@ -1,0 +1,23 @@
+CÁC BIẾN TRONG JAVA:
+_string: chuỗi
+_int: số
+_float: số thập phân
+_char: lưu 1 ký tự vd như "a" hoặc "b"
+_boolean
+KHAI BÁO BIẾN: type variable = value;
+           vd: string name   = "hung";
+Chú ý nếu gán gtri mới đè lên gtri cũ thì sẽ đè lên
+Gán với từ khóa final ( final int num = 20;) thì sẽ không thể ghi đè, nếu k sẽ báo lỗi.
+HIỂN THỊ GIÁ TRỊ BIẾN: 
+System.out.println("Hello" + name);
+KIỂU DỮ LIỆU: Nguyên thủy, interger, float, khoa học, boolean, ký tự, chuỗi, đối tượng
+TOÁN TỬ: Số học, gán, so sánh, logic, bit 
+Mệnh đề if else thu gọn chính là toán tử 3 ngôi
+If else và switch case tương tự JS.
+
+JDK: Jave Development Kit
+    Nhiệm vụ: Phát triển UWD Java,  Compile. debug, run ứng dụng Java
+JRE: Java Runtime Environment
+    Nhiệm vụ: Tạo môi trg chạy ứng dụng Java, chỉ chạy các ứng dụng Java.
+JVM: Java Virtual Machine
+    Nhiệm vụ: Biên dịch và thực thi mã bytecode ra mã máy chạy

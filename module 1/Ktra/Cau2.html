@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhap so can kiem tra:"));
+    if (a < 0)
+    {
+        alert("Nhập lại a!");
+    }
+    else {
+        function Check() {
+            let sum = 0;
+            for (let i = 0; i <= (a / 2); i++) {
+                if (a % i === 0) {
+                    sum += i;
+                }
+            }
+            if (sum === a) {
+                return true;
+            } else return false;
+        }
+
+        if (Check())
+            document.write(a + " la so hoan hao");
+        else document.write(a + " khong la so hoan hao");
+    }
+</script>
+</body>
+</html>
