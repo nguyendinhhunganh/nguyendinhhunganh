@@ -32,20 +32,9 @@ public class Exercise_22_02 {
 
         // Display the maximum consecutive
         // increasingly ordered substring
-        for (Character ch: max) { // single loop
+        for (Character ch : max) { // single loop
             System.out.print(ch); // Simple statement
         }
-        System.out.println();
     }
-
-/*********************************************************************************
- * 	Analyze the time complexity of your program:                                  *
- * 	1 outerloop = n;                                                              *
- * 	1 innerloop = n - 1;                                                          *
- *  1 simple statement = 1                                                        *
- * 	1 single loop * 1 simple statement = 1;                                       *
- *  T(n) = (n * (n - 1)) + (1 + 1);                                               *
- *  T(n) = O(n^2) + O(n);                                                         *
- * 	T(n) = O(n^2) Quadratic time;                                                 *
- *********************************************************************************/
 }
+
