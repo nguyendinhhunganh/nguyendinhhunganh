@@ -5,12 +5,14 @@ import java.util.*;
 public class ProductManager {
     private static List<Product> products = new ArrayList<>();
     private static Scanner input = new Scanner(System.in);
+
     static {
-        products.add(new Product(1,"HP pavilion gaming 15",20000000));
-        products.add(new Product(3,"Dell latitude e6540",10000000));
-        products.add(new Product(2,"macbook pro 2021",40000000));
-        products.add(new Product(4,"acer swift 3",18000000));
+        products.add(new Product(1, "HP pavilion gaming 15", 20000000));
+        products.add(new Product(3, "Dell latitude e6540", 10000000));
+        products.add(new Product(2, "macbook pro 2021", 40000000));
+        products.add(new Product(4, "acer swift 3", 18000000));
     }
+
     public static void displayMenu() {
         int choice = -1;
         do {
@@ -136,17 +138,24 @@ public class ProductManager {
             editProduct();
         }
     }
+
     public static void deleteProduct() {
         System.out.println("Enter id:");
         int id = input.nextInt();
         products.remove(findById(id));
     }
+
     public static void searchProduct() {
         System.out.println("Enter id:");
         int id = input.nextInt();
         System.out.println(findById(id));
     }
+
     public static void sortProduct() {
         Collections.sort(products);
+    }
+
+    public static ArrayList<Product> getProducts() {
+        return (ArrayList<Product>) products;
     }
 }
