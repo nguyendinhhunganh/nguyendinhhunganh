@@ -1,9 +1,13 @@
 package case_study.controllers;
 
+import case_study.services.BookingService;
 import case_study.services.CustomerService;
 import case_study.services.EmployeeService;
+import case_study.services.FacilityService;
+import case_study.services.Impl.BookingServiceImpl;
 import case_study.services.Impl.CustomerServiceImpl;
 import case_study.services.Impl.EmployeeServiceImpl;
+import case_study.services.Impl.FacilityServiceImpl;
 
 import java.util.Scanner;
 
@@ -26,10 +30,10 @@ public class FuramaController {
                     displayCustomerMenu();
                     break;
                 case 3:
-                    menu3();
+                    displayFacilityMenu();
                     break;
                 case 4:
-                    menu4();
+                    displayBookingMenu();
                     break;
                 case 5:
                     menu5();
@@ -94,7 +98,8 @@ public class FuramaController {
 
     }
 
-    public static void menu3() {
+    public static void displayFacilityMenu() {
+        FacilityService facilityService = new FacilityServiceImpl();
         boolean check = true;
         while (check) {
             System.out.println("1. Display list facility");
@@ -104,13 +109,24 @@ public class FuramaController {
             Scanner scanner = new Scanner(System.in);
             switch (scanner.nextInt()) {
                 case 1:
+                    facilityService.display();
+                    break;
+                case 2:
+                    facilityService.addNew();
+                    break;
+                case 3:
+                    facilityService.displayListFacilityMaintenance();
+                    break;
+                case 4:
+                    displayMenu();
                     break;
             }
         }
 
     }
 
-    public static void menu4() {
+    public static void displayBookingMenu() {
+        BookingService bookingService = new BookingServiceImpl();
         boolean check = true;
         while (check) {
             System.out.println("1. Add new booking");
@@ -122,6 +138,22 @@ public class FuramaController {
             Scanner scanner = new Scanner(System.in);
             switch (scanner.nextInt()) {
                 case 1:
+                    bookingService.addNew();
+                    break;
+                case 2:
+                    bookingService.display();
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+                case 5:
+                    bookingService.edit();
+                    break;
+                case 6:
+                    displayMenu();
                     break;
             }
         }

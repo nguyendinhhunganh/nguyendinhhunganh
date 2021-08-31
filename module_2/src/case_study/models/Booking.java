@@ -1,6 +1,10 @@
 package case_study.models;
 
-public class Booking {
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Comparator;
+
+public class Booking implements Comparator<Booking> {
     private int bookingCode;
     private String firstDay;
     private String lastDay;
@@ -68,4 +72,24 @@ public class Booking {
                 ", facility=" + facility +
                 '}';
     }
-}
+
+    @Override
+    public int compare(Booking o1, Booking o2) {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate startDate1 = LocalDate.parse(o1.getFirstDay(), dateTimeFormatter);
+        LocalDate startDate2 = LocalDate.parse(o2.getFirstDay(), dateTimeFormatter);
+        LocalDate endDate1 = LocalDate.parse(o1.getLastDay(), dateTimeFormatter);
+        LocalDate endDate2 = LocalDate.parse(o2.getLastDay(), dateTimeFormatter);
+        if (startDate1.compareTo(startDate2) > 0) {
+            return 1;
+        } else if (startDate1.compareTo(startDate2) < 0) {
+            return -1;
+        } else {
+            if (endDate1.compareTo(endDate2) > 0) {
+                return 1;
+            } else if (endDate1.compareTo(endDate2) < 0) {
+                return -1;
+            }
+            return 0;
+        }
+}}
