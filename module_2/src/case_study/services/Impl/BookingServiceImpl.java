@@ -99,9 +99,25 @@ public class BookingServiceImpl implements BookingService {
         String endDay = input.nextLine();
         Booking booking = new Booking(id, startDay, endDay, customer, facility);
         bookings.add(booking);
-        System.out.println("add booking success");
+        System.out.println("Add booking success");
+    }
+    public static Facility chooseFacility(String service) {
+        for (Map.Entry<Facility, Integer> entry : facilityIntegerMap.entrySet()) {
+            if (service.equals(entry.getKey().getServiceName())) {
+                return entry.getKey();
+            }
+        }
+        return null;
     }
 
+    public static Customer chooseCustomer(int customerCode) {
+        for (Customer customer : customerList) {
+            if (customerCode == customer.getCustomerCode()) {
+                return customer;
+            }
+        }
+        return null;
+    }
     @Override
     public void edit() {
 

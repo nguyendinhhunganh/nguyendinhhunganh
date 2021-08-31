@@ -1,13 +1,7 @@
 package case_study.controllers;
 
-import case_study.services.BookingService;
-import case_study.services.CustomerService;
-import case_study.services.EmployeeService;
-import case_study.services.FacilityService;
-import case_study.services.Impl.BookingServiceImpl;
-import case_study.services.Impl.CustomerServiceImpl;
-import case_study.services.Impl.EmployeeServiceImpl;
-import case_study.services.Impl.FacilityServiceImpl;
+import case_study.services.*;
+import case_study.services.Impl.*;
 
 import java.util.Scanner;
 
@@ -36,7 +30,7 @@ public class FuramaController {
                     displayBookingMenu();
                     break;
                 case 5:
-                    menu5();
+                    displayPromotionMenu();
                     break;
                 case 6:
                     System.exit(6);
@@ -160,7 +154,8 @@ public class FuramaController {
 
     }
 
-    public static void menu5() {
+    public static void displayPromotionMenu() {
+        PromotionService promotionService = new PromotionServiceImpl();
         boolean check = true;
         while (check) {
             System.out.println("1. Display list customers use service");
@@ -169,6 +164,13 @@ public class FuramaController {
             Scanner scanner = new Scanner(System.in);
             switch (scanner.nextInt()) {
                 case 1:
+                    promotionService.displayListCustomersUseService();
+                    break;
+                case 2:
+                    promotionService.displayListCustomersGetVoucher();
+                    break;
+                case 3:
+                    displayMenu();
                     break;
             }
         }
