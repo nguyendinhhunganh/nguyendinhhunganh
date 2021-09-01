@@ -5,6 +5,7 @@ import case_study.models.Customer;
 import case_study.models.Facility;
 import case_study.models.Villa;
 import case_study.services.BookingService;
+import case_study.utils.ReadAndWrite;
 
 import java.util.*;
 
@@ -14,19 +15,18 @@ public class BookingServiceImpl implements BookingService {
     static List<Customer> customerList = new ArrayList<>();
     static Map<Facility, Integer> facilityIntegerMap = new LinkedHashMap<>();
     static {
-        customerList.add(new Customer("Nguyen Van A", "23/04/1994", "Nam", 184654768,
-                "0971367456", "nguyenvana@gmail.com", 106170011, 2, "Quan Hai Chau, Da Nang"));
-        customerList.add(new Customer("Nguyen Thi B", "23/1/1996", "Nu", 184245648,
-                "0971376547", "nguyenthib@gmail.com", 106170013, 1, "Quan Hai Chau, Da Nang"));
+        customerList.add(new Customer("Nguyen Van A", "23/04/1994", "Nam", 186634768,
+                "0976406034", "nguyenvana@gmail.com", 106170075, 2, "Quan Hai Chau, Da Nang"));
+        customerList.add(new Customer("Nguyen Van B", "21/4/1999", "Nam", 184244678,
+                "0972435846", "nguyenvanb@gmail.com", 1061700177, 1, "Quan Hai Chau, Da Nang"));
         facilityIntegerMap.put(new Villa("villa 1", 200, 3000000, 5,
                 "ngày", "villa cao cấp", 50, 2), 0);
         facilityIntegerMap.put(new Villa("villa 2", 250, 4000000, 6,
                 "ngày", "villa cao cấp", 50, 2), 0);
-        facilityIntegerMap.put(new Villa("villa 3", 300, 5000000, 7,
-                "ngày", "villa cao cấp", 50, 2), 0);
     }
     @Override
     public void display() {
+        ReadAndWrite.read("D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\booking.csv");
         for (Booking booking : bookings) {
             System.out.println(booking);
         }
@@ -100,6 +100,7 @@ public class BookingServiceImpl implements BookingService {
         Booking booking = new Booking(id, startDay, endDay, customer, facility);
         bookings.add(booking);
         System.out.println("Add booking success");
+        ReadAndWrite.write(bookings, "D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\booking.csv");
     }
     public static Facility chooseFacility(String service) {
         for (Map.Entry<Facility, Integer> entry : facilityIntegerMap.entrySet()) {

@@ -2,6 +2,7 @@ package case_study.services.Impl;
 
 import case_study.models.Employee;
 import case_study.services.EmployeeService;
+import case_study.utils.ReadAndWrite;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,54 +17,10 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
     @Override
     public void display() {
+        employeeList = (List<Employee>) ReadAndWrite.read("D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\employees.csv");
         for(Employee employee: employeeList){
             System.out.println(employee.toString());
         }
-        String name = scanner.nextLine();
-        System.out.println("Enter dateOfBirth :");
-        String dateOfBirth = scanner.nextLine();
-        System.out.println("Enter sex :");
-        String sex = scanner.nextLine();
-        System.out.println("Enter identityCardNumber :");
-        int identityCardNumber = 0;
-        try {
-            identityCardNumber = Integer.parseInt(scanner.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
-        System.out.println("Enter telephoneNumber :");
-        String telephoneNumber = scanner.nextLine();
-        System.out.println("Enter email :");
-        String email = scanner.nextLine();
-        System.out.println("Enter employeeCode :");
-        int employeeCode = 0;
-        try {
-            employeeCode = Integer.parseInt(scanner.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
-        System.out.println("Enter level :");
-        int level = 0;
-        try {
-            level = Integer.parseInt(scanner.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
-        System.out.println("Enter position :");
-        int position = 0;
-        try {
-            position = Integer.parseInt(scanner.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
-        System.out.println("Enter salary :");
-        float salary = 0;
-        try {
-            salary = Integer.parseInt(scanner.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Import bad format, please enter back");
-        }
-        employeeList.add(new Employee(name,dateOfBirth,sex,identityCardNumber,telephoneNumber,email,employeeCode,level,position,salary));
     }
 
     @Override
@@ -114,6 +71,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             System.out.println("Import bad format, please enter back");
         }
         employeeList.add(new Employee(name,dateOfBirth,sex,identityCardNumber,telephoneNumber,email,employeeCode,level,position,salary));
+        ReadAndWrite.write(employeeList, "D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\employees.csv");
     }
 
     @Override
@@ -198,6 +156,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             System.out.println("id not found");
             edit();
         }
+        ReadAndWrite.write(employeeList, "D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\employees.csv");
     }
 
     @Override

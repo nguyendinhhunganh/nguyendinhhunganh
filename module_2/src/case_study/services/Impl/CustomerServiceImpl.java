@@ -2,6 +2,7 @@ package case_study.services.Impl;
 
 import case_study.models.Customer;
 import case_study.services.CustomerService;
+import case_study.utils.ReadAndWrite;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void display() {
+        customerList = (List<Customer>) ReadAndWrite.read("D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\customers.csv");
         for (Customer customer : customerList) {
             System.out.println(customer.toString());
         }
@@ -70,6 +72,7 @@ public class CustomerServiceImpl implements CustomerService {
         System.out.println("Enter address :");
         String address = scanner.nextLine();
         customerList.add(new Customer(name,dateOfBirth,sex,identityCardNumber,telephoneNumber,email,customerCode,customerType,address));
+        ReadAndWrite.write(customerList, "D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\customers.csv");
     }
     @Override
     public void edit() {
@@ -136,6 +139,7 @@ public class CustomerServiceImpl implements CustomerService {
             }
         }
     }
+        ReadAndWrite.write(customerList, "D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\customers.csv");
     }
     @Override
     public void delete() {

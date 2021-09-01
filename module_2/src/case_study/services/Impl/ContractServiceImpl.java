@@ -4,6 +4,7 @@ import case_study.models.Booking;
 import case_study.models.Contract;
 import case_study.models.Customer;
 import case_study.services.ContractService;
+import case_study.utils.ReadAndWrite;
 
 import java.util.*;
 
@@ -13,6 +14,7 @@ public class ContractServiceImpl implements ContractService {
 
     @Override
     public void display() {
+        contractList = (List<Contract>) ReadAndWrite.read("D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\contracts.csv");
         for (Contract contract : contractList) {
             System.out.println(contract);
         }
@@ -57,8 +59,10 @@ public class ContractServiceImpl implements ContractService {
             Contract contract = new Contract(booking, contractCode, deposit, totalMoney);
             contractList.add(contract);
             System.out.println("create a successful contract");
+            ReadAndWrite.write(contractList, "D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\contracts.csv");
         }
     }
+
     public Contract isContract(int contractCode) {
         for (Contract contract : contractList) {
             if (contract.getContractCode() == contractCode) {
@@ -67,6 +71,7 @@ public class ContractServiceImpl implements ContractService {
         }
         return null;
     }
+
     @Override
     public void edit() {
         System.out.println("Enter contract code:");
@@ -108,9 +113,10 @@ public class ContractServiceImpl implements ContractService {
                 }
             }
         } else {
-            System.out.println("id not found");
+            System.out.println("Id not found");
             edit();
         }
+        ReadAndWrite.write(contractList, "D:\\Study\\Codegym\\A0321I1-NguyenDinhHungAnh\\module_2\\src\\case_study\\data\\contracts.csv");
     }
 
     @Override
