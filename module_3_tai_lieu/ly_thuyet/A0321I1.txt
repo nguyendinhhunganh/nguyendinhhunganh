@@ -1,0 +1,13 @@
+Cần xây dựng 1 cái trang quản lí lớp ở codegym.
+Thông tin lớp: tên lớp, mã lớp, học sinh của lớp
+học sinh của lớp: tên học sinh, mã học sinh, ngày sinh, địa chỉ, số điện thoại 
+liên lạc.
+Điểm của học sinh: có 6 module.
+Giảng viên của lớp: tên giảng viên, mã giảng viên, địa chỉ, kinh nghiệm,..
+- 1 Account (username, password) 1 học sinh, 1 học sinh thì chỉ có 1 account -> Mối quan hệ 1-1
+- 1 học sinh sẽ có 1 lớp, nhưng 1 lớp có nhiều học sinh -> mối quan hệ 1 -n
+- 1 giảng viên có thể dạy nhiều lớp, 1 lớp sẽ được nhiều giảng viên dạy -> mối quan hệ n-n
+- 1 học sinh sẽ có nhiều điểm ( mỗi module có 1 điểm), 
+Mỗi module sẽ có nhiều điểm ( bởi nhiều sinh viên khác nhau) -> n-n -> 1-n và n - 1
+-> Thực thể: Học sinh, Lớp, Điểm, Giảng viên, Module
+=> Vẽ ERD.

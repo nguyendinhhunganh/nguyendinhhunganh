@@ -2,7 +2,6 @@ package case_study.utils;
 
 import java.io.*;
 import java.util.Collection;
-import java.util.Collections;
 
 public class ReadAndWrite {
     public static void write(Collection collection, String address) {
@@ -45,4 +44,5 @@ public class ReadAndWrite {
         }
             return null;
         }
-    }
+
+}
